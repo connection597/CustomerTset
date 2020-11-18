@@ -13,7 +13,7 @@ public class Custmoer2 {
 	public void setCustomerID(int customerID) {
 		this.customerID=customerID;
 	}
-	public String getCustomerName() {
+	public String getCustomerName(String customerName) {
 		return customerName;
 	}
 	public void setCustomerName(String customerName) {

@@ -14,8 +14,8 @@ public class Customer {  //변수
 		bonusRatio = 0.01;
 		System.out.println("Customer() 생성자 호출");
 	}
-	public void calcPrice(int price) {
-		bonusPoint +=price*bonusPoint; //보너스포인트 계산
+	public int calcPrice(int price) {
+		return bonusPoint +=price*bonusPoint;
 	}
 	
 	public String showCustomerInfo() { // 고객정보 반환하기 메소드
@@ -54,6 +54,10 @@ public class Customer {  //변수
 		this.customerID= customerID;
 		// TODO Auto-generated method stub
 		
+	}
+	public String getCustomerName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 
