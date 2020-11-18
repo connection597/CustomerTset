@@ -7,9 +7,12 @@ public class Customer {  //변수
 	int bonusPoint;
 	double bonusRatio;
 	
-	public Customer() { // 기본 등급과 적립비율
+	public Customer(int customerID, String customerName) { // 기본 등급과 적립비율
+		this.customerID =customerID;
+		this.customerName= customerName;
 		customerGrade ="SILVER";
 		bonusRatio = 0.01;
+		System.out.println("Customer() 생성자 호출");
 	}
 	public void calcPrice(int price) {
 		bonusPoint +=price*bonusPoint; //보너스포인트 계산
